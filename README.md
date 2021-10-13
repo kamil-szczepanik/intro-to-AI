@@ -43,12 +43,93 @@ Metoda gradientu prostego dla funkcji zmiennej pozwala znaleźć jej minumum lub
 
 Algorytm dostosowuje wartość skoku kolejnej wartości `x`, w zależności od gradientu dla poprzedniego `x` i wartości współczynnika uczenia
 
-##### Działanie
+### Wykonane eksperymenty
 
-###### Dla funkcji f(x) = x^2 + 3x + 8 :
+###### Przyjęto parametry:
+- Maksymalna liczba iteracji: 1000
+- Zadowalająca dokładność: 0.0001
 
-- punkt startowy = -3
+#### Dla funkcji f(x) = x^2 + 3x + 8 :
+###### 1)
+- punkt startowy = 0.5
 - współczynnik uczenia = 0.1
+
+![](cw1/images/f1_05_01.png )
+
+Wynik:  -1.4999643188076823,
+Liczba iteracji:  49
+
+###### 2)
+- punkt startowy = 0.5
+- współczynnik uczenia = 0.9
+
+![](cw1/images/f1_05_09.png )
+
+Wynik:  -1.5000356811923177,
+Liczba iteracji:  49
+
+#### Wnioski:
+
+
+#### Dla funkcji f(x) = x^4 - 5x^2 - 3x :
+###### 1)
+- punkt startowy = 0
+- współczynnik uczenia = 0.1
+
+![](cw1/images/f2_0_01.png )
+
+Wynik:  1.0393324789193148,
+Liczba iteracji:  1000
+
+###### 2)
+- punkt startowy = 0
+- współczynnik uczenia = 0.2
+
+![](cw1/images/f2_0_02.png )
+
+Wynik:  -1.4120028141545609,
+Liczba iteracji:  1000
+
+###### 3)
+- punkt startowy = 0
+- współczynnik uczenia = 0.01
+
+![](cw1/images/f2_0_001.png )
+
+Wynik:  1.7139370174658386,
+Liczba iteracji:  63
+
+###### 4)
+- punkt startowy = 0
+- współczynnik uczenia = 0.05
+
+![](cw1/images/f2_0_005.png )
+
+Wynik:  1.7139398323504043,
+Liczba iteracji:  14
+
+###### 5)
+- punkt startowy = -0.5
+- współczynnik uczenia = 0.1
+
+![](cw1/images/f2_-05_01.png )
+
+Wynik:  -1.40177304570067,
+Liczba iteracji:  12
+
+###### 6)
+- punkt startowy = -0.5
+- współczynnik uczenia = 0.05
+
+![](cw1/images/f2_-05_005.png )
+
+Wynik:  -1.4017700669801165,
+Liczba iteracji:  17
+
+#### Wnioski:
+
+
+
 
 
 </details>
