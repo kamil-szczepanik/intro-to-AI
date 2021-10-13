@@ -45,6 +45,12 @@ Algorytm dostosowuje wartość skoku kolejnej wartości `x`, w zależności od g
 
 ##### Działanie
 
+###### Dla funkcji f(x) = x^2 + 3x + 8 :
+
+- punkt startowy = -3
+- współczynnik uczenia = 0.1
+
+
 </details>
 
 
