@@ -1,14 +1,14 @@
 from matplotlib import pyplot as plt
 import numpy as np
 
-# funkcja 1
+# # funkcja 1
 # def funciton(x):
 #     return x**2 + x*3 + 8
 
 # def function_prim(x):
 #     return 2*x + 3
 
-# funkcja 2
+# # funkcja 2
 def funciton(x):
     return x**4 - 5*x**2 - 3*x
 
@@ -40,7 +40,7 @@ def find_minimum(start_point, wsp_ucz, max_iters, accuracy):
 
 
 def wykres(x_k, x_points, y_points):
-    # x = np.arange(-3.5,1,0.1)
+    # x = np.arange(-3.5,1,0.1) # dla funkcji 1 (żeby wykresy były dobrze widoczne)
     x = np.arange(-2.5,3,0.1) # dla funkcji 2
     y = funciton(x)
     plt.plot(x,y, label='Przykładowa funkcjia zmienna')
@@ -55,7 +55,7 @@ def wykres(x_k, x_points, y_points):
 if __name__ == "__main__":
 
     # start_point = 0.5
-    # wsp_ucz = 0.9
+    # wsp_ucz = 0.1
     # max_iters = 100
     # accuracy = 0.0001
 
