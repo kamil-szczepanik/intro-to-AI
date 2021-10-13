@@ -68,7 +68,7 @@ Liczba iteracji:  49
 Wynik:  -1.5000356811923177,
 Liczba iteracji:  49
 
-##### Wnioski:
+#### Wnioski:
 
 
 #### Dla funkcji f(x) = x^4 - 5x^2 - 3x :
@@ -126,7 +126,7 @@ Liczba iteracji:  12
 Wynik:  -1.4017700669801165,
 Liczba iteracji:  17
 
-##### Wnioski:
+#### Wnioski:
 
 
 
