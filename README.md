@@ -1,8 +1,8 @@
 # Wprowadzenie do sztucznej inteligencji
 
-Kamil Szczepanik
+_Kamil Szczepanik_
 
-303782
+_303782_
 
 
 ## Dokumentacja
@@ -43,6 +43,8 @@ Metoda gradientu prostego dla funkcji zmiennej pozwala znaleźć jej minumum lub
 
 Algorytm dostosowuje wartość skoku kolejnej wartości `x`, w zależności od gradientu dla poprzedniego `x` i wartości współczynnika uczenia
 
+W pliku `przeszukiwanie.py` znajduje się implementacja zadania. 
+
 ### Wykonane eksperymenty
 
 ###### Przyjęto parametry:
@@ -50,7 +52,7 @@ Algorytm dostosowuje wartość skoku kolejnej wartości `x`, w zależności od g
 - Zadowalająca dokładność: 0.0001
 
 #### Dla funkcji f(x) = x^2 + 3x + 8 :
-###### 1)
+##### 1)
 - punkt startowy = 0.5
 - współczynnik uczenia = 0.1
 
@@ -59,7 +61,7 @@ Algorytm dostosowuje wartość skoku kolejnej wartości `x`, w zależności od g
 Wynik:  -1.4999643188076823,
 Liczba iteracji:  49
 
-###### 2)
+##### 2)
 - punkt startowy = 0.5
 - współczynnik uczenia = 0.9
 
@@ -72,7 +74,7 @@ Liczba iteracji:  49
 Dla funkcji kwadratowej algorytm działał prawidłowo. Wartości kolejnych x zbiegały do rozwiązania w obu przypadkach wielkości współczynnika uczenia.
 
 #### Dla funkcji f(x) = x^4 - 5x^2 - 3x :
-###### 1)
+##### 1)
 - punkt startowy = 0
 - współczynnik uczenia = 0.1
 
@@ -81,7 +83,7 @@ Dla funkcji kwadratowej algorytm działał prawidłowo. Wartości kolejnych x zb
 Wynik:  1.0393324789193148,
 Liczba iteracji:  1000
 
-###### 2)
+##### 2)
 - punkt startowy = 0
 - współczynnik uczenia = 0.9
 
@@ -89,7 +91,7 @@ Liczba iteracji:  1000
 
 Wartość pochodnej rośnie do nieskończoności - złe parametry
 
-###### 3)
+##### 3)
 - punkt startowy = 0
 - współczynnik uczenia = 0.2
 
@@ -98,7 +100,7 @@ Wartość pochodnej rośnie do nieskończoności - złe parametry
 Wynik:  -1.4120028141545609,
 Liczba iteracji:  1000
 
-###### 4)
+##### 4)
 - punkt startowy = 0
 - współczynnik uczenia = 0.01
 
@@ -107,7 +109,7 @@ Liczba iteracji:  1000
 Wynik:  1.7139370174658386,
 Liczba iteracji:  63
 
-###### 5)
+##### 5)
 - punkt startowy = 0
 - współczynnik uczenia = 0.05
 
@@ -116,7 +118,7 @@ Liczba iteracji:  63
 Wynik:  1.7139398323504043,
 Liczba iteracji:  14
 
-###### 6)
+##### 6)
 - punkt startowy = -0.5
 - współczynnik uczenia = 0.1
 
@@ -125,7 +127,7 @@ Liczba iteracji:  14
 Wynik:  -1.40177304570067,
 Liczba iteracji:  12
 
-###### 7)
+##### 7)
 - punkt startowy = -0.5
 - współczynnik uczenia = 0.05
 
@@ -140,7 +142,7 @@ W eksperymentach 4) i 5) dobrano współczynnik uczenia taki, że minimum lokaln
 W eksperymentach 6) i 7) nieco przesunięto punkt startowy, co spowodowało znalezienie innego minima lokalnego.
 
 #### Wnioski
-Algorytm działa poprawnie dla dobrze dobranych parametrów. Należy dobrze wybrać punkt startowy oraz być świadomym, że w zależności od jego wartości algorytm znajduje inne rozwiązania (dla wielomianów o stopniu większym niż 2). Punkt startowy musi być także w takim miejscu, aby rozwiązanie nie zbiegało do +-nieskończoności.
+Algorytm działa poprawnie dla dobrze dobranych parametrów. Należy dobrze wybrać punkt startowy oraz być świadomym, że w zależności od jego wartości algorytm znajduje inne rozwiązania (dla wielomianów o stopniu większym niż 2). Punkt startowy musi być także w takim miejscu, aby rozwiązanie nie zbiegało do +-nieskończoności. Innym bardzo ważnym parametrem jest współczynnik uczenia. Dla funkcji większego stopnia współczynnik powinien być raczej mały (około 0.01-0.1).
 
 </details>
 
