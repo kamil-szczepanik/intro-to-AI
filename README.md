@@ -43,12 +43,51 @@ Metoda gradientu prostego dla funkcji zmiennej pozwala znaleźć jej minumum lub
 
 Algorytm dostosowuje wartość skoku kolejnej wartości `x`, w zależności od gradientu dla poprzedniego `x` i wartości współczynnika uczenia
 
-##### Działanie
+### Wykonane eksperymenty
 
-###### Dla funkcji f(x) = x^2 + 3x + 8 :
-
-- punkt startowy = -3
+#### Dla funkcji f(x) = x^2 + 3x + 8 :
+###### 1)
+- punkt startowy = 0.5
 - współczynnik uczenia = 0.1
+
+![](cw1/images/f1_05_01.png )
+
+###### 2)
+- punkt startowy = 0.5
+- współczynnik uczenia = 0.9
+
+![](cw1/images/f1_05_09.png )
+
+##### Wnioski:
+
+
+#### Dla funkcji f(x) = x^4 - 5x^2 - 3x :
+###### 1)
+- punkt startowy = 0
+- współczynnik uczenia = 0.1
+
+![](cw1/images/f2_0_01.png )
+
+###### 2)
+- punkt startowy = 0
+- współczynnik uczenia = 0.9
+
+![](cw1/images/f2_0_02.png )
+
+###### 3)
+- punkt startowy = 0
+- współczynnik uczenia = 0.01
+
+![](cw1/images/f2_0_001.png )
+
+###### 4)
+- punkt startowy = 0
+- współczynnik uczenia = 0.05
+
+![](cw1/images/f2_0_005.png )
+
+
+
 
 
 </details>
