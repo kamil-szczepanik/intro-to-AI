@@ -68,8 +68,8 @@ Liczba iteracji:  49
 Wynik:  -1.5000356811923177,
 Liczba iteracji:  49
 
-#### Wnioski:
-
+#### Obserwacje
+Dla funkcji kwadratowej algorytm działał prawidłowo. Wartości kolejnych x zbiegały do rozwiązania w obu przypadkach wielkości współczynnika uczenia.
 
 #### Dla funkcji f(x) = x^4 - 5x^2 - 3x :
 ###### 1)
@@ -83,6 +83,14 @@ Liczba iteracji:  1000
 
 ###### 2)
 - punkt startowy = 0
+- współczynnik uczenia = 0.9
+
+**OverflowError: (34, 'Numerical result out of range')**
+
+Wartość pochodnej rośnie do nieskończoności - złe parametry
+
+###### 3)
+- punkt startowy = 0
 - współczynnik uczenia = 0.2
 
 ![](cw1/images/f2_0_02.png )
@@ -90,7 +98,7 @@ Liczba iteracji:  1000
 Wynik:  -1.4120028141545609,
 Liczba iteracji:  1000
 
-###### 3)
+###### 4)
 - punkt startowy = 0
 - współczynnik uczenia = 0.01
 
@@ -99,7 +107,7 @@ Liczba iteracji:  1000
 Wynik:  1.7139370174658386,
 Liczba iteracji:  63
 
-###### 4)
+###### 5)
 - punkt startowy = 0
 - współczynnik uczenia = 0.05
 
@@ -108,7 +116,7 @@ Liczba iteracji:  63
 Wynik:  1.7139398323504043,
 Liczba iteracji:  14
 
-###### 5)
+###### 6)
 - punkt startowy = -0.5
 - współczynnik uczenia = 0.1
 
@@ -117,7 +125,7 @@ Liczba iteracji:  14
 Wynik:  -1.40177304570067,
 Liczba iteracji:  12
 
-###### 6)
+###### 7)
 - punkt startowy = -0.5
 - współczynnik uczenia = 0.05
 
@@ -126,11 +134,13 @@ Liczba iteracji:  12
 Wynik:  -1.4017700669801165,
 Liczba iteracji:  17
 
-#### Wnioski:
+#### Obserwacje
+Dla eksperymentów 1), 2) i 3) algorytm nie zadziałał- minimum lokalne nie zostało osiągnięte. Jest to spowodowane zbyt dużą wartością współczynnika uczenia oraz samą charakterystyką wielomianu, ponieważ osiąga on bardzo różne wartości w stosunkowo niewielkim przedziale x. 
+W eksperymentach 4) i 5) dobrano współczynnik uczenia taki, że minimum lokalne zostało osiągnięte. W eksperymencie 4) rozwiązanie zostało znalezione już po 14 iteracjach.
+W eksperymentach 6) i 7) nieco przesunięto punkt startowy, co spowodowało znalezienie innego minima lokalnego.
 
-
-
-
+#### Wnioski
+Algorytm działa poprawnie dla dobrze dobranych parametrów. Należy dobrze wybrać punkt startowy oraz być świadomym, że w zależności od jego wartości algorytm znajduje inne rozwiązania (dla wielomianów o stopniu większym niż 2). Punkt startowy musi być także w takim miejscu, aby rozwiązanie nie zbiegało do +-nieskończoności.
 
 </details>
 
