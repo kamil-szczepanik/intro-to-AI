@@ -4,6 +4,7 @@ Kamil Szczepanik
 
 303782
 
+
 ## Dokumentacja
 
 <details><summary>Ćwiczenie 1</summary>
@@ -25,10 +26,26 @@ Nie trzeba implementować liczenia pochodnej z funkcji wejściowej - podajemy ja
 
 hint: f(x) i ∇f(x) najlepiej przekazać jako argument funkcji np.:
 
-                 # lambda x: x ** 2
-                 # lambda gx: 2 * gx
+    # lambda x: x ** 2
+    # lambda gx: 2 * gx
+
+
+</details>
 
 
 
+<details><summary>Ćwiczenie 2</summary>
+Do zrobienia
+</details>
 
+<details><summary>Ćwiczenie 3</summary>
+Do zrobienia
+</details>
+
+<details><summary>Ćwiczenie 4</summary>
+Do zrobienia
+</details>
+
+<details><summary>Ćwiczenie 5</summary>
+Do zrobienia
 </details>
