@@ -34,10 +34,10 @@ hint: f(x) i ∇f(x) najlepiej przekazać jako argument funkcji np.:
 
 Metoda gradientu prostego dla funkcji zmiennej pozwala znaleźć jej minumum lub maximum lokalne. Algorytm jest następujący:
 1) Wybranie punktu startowego (x_k) oraz współczynnika uczenia
-2) Policzenie wartości pochodnej funkcji w x_k
+2) Policzenie wartości pochodnej funkcji w x_k czyli gradientu
 3) Policzenie kolejnego punktu x ze wzoru: x_k+1 = x_k -+ wsp_ucz * d 
     
-    gdzie: `d` to policzona wcześniej pochodna. Do liczenia minimum (-), do liczenia maximum (+)
+    gdzie: `d` to gradient. Do liczenia minimum (-), do liczenia maximum (+)
 
 4) Powtarzamy punkty 2) i 3) do momentu aż otrzymamy punkt z zadowalającą dokładnością lub przekroczymy ustalony limit iteracji.
 
