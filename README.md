@@ -162,7 +162,6 @@ Implementacje wykonano na podstawie pseudokodu przedstawionego na wykładzie:
 
 ![](task2/images/pseudokod.png )
 
-
 Parametrami pragramu są:
 - Liczba iteracji
 - Wielkość populacji inicjalnej
@@ -173,26 +172,61 @@ Parametrami pragramu są:
 - Funkcja celu - jako minimalizacje pewnej funkcji
 
 ### Eksperymenty:
+Funkcja, na której testowano algorytm to Bird Function
+
+![](task2/images/bird_formula.png )
+
+![](task2/images/bird.png )
+
+Jest  to dobra funkcja na testowanie przeszukujących algorytmów, ponieważ ma kilka minimów, w tym dwa optima globalne:
+f(x)=−106.764537 ulokowane w x=(4.70104 ,3.15294) oraz x=(−1.58214 ,−3.13024)
+
+
+
 #### Zależność wartości funkcji celu od wielkości populacji:
 Parametry funkcji
-- pop_size = 100
 - pop_arg_num = 2
 - tournament_size = 2
 - elite = 1
 - sigma = 0.1
 - mutation_prob = 0.5
 - function_to_minimize = bird_function
+
 ![](task2/images/pop_size1.png )
 
 ![](task2/images/pop_size2.png )
 
-![](task2/images/pop_size3.png )
+Na powyższych wykresach widać, że funcja celu maleje dla każdej wielkości populacji. Dodatkowo robi to całkiem szybko bo już po kilku iteracjach algorytm znajduje przybliżone rozwiązanie. Widać jednak, że populacja wielkości 10 może czasem nie wystarczyć na znalezienie rozwiązania - algorytm
+utyka w minimum lokalnym i pozostaje tam do końca trwania programu.
 
 #### Zależność wartości funkcji celu od siły mutacji (sigma):
+Parametry:
+- pop_size = 50
+- pop_arg_num = 2
+- tournament_size = 2
+- elite = 1
+- mutation_prob = 0.5
+- function_to_minimize = bird_function
+
+![](task2/images/sigma1.png )
+
+![](task2/images/sigma2.png )
+
+![](task2/images/sigma3.png )
+
+Sigma = 0.1 - W większości eksperymentów taka sigma była wystarczająca. Algorytm zbiega do rozwiązania. Czasami jednak dla tej wartości siły 
+mutacji algorytm utyka w jednym z minimów lokalnych i nie udaje mu się stamtąd wydostać.
+
+Sigma = 0.5 - Wydaje się być optymalną wartością siły mutacji. W jednym z eksperymentów bardzo dobre rozwiązanie zostało znalezione już w drugiej iteracji.
+
+Sigma = 2 - Na pierwszej ilustracji można zauważyć, że algorymt dla sigmy = 2 jest mocno niestabilny i "skacze" po przeszukiwanej przestrzeni.
+W końcu jednak znajduje minimum globalne. W innych przypadkach funkcja celu dla takie siły mutacji również szybko znajduje dobre rozwiazanie. Duża wartość sigmy zapobiega nadmiernej eksploatacji i pozwala na lepszą eksplorację.
 
 #### Zależność wartości funkcji celu od rozmiaru elity:
 
+![](task2/images/elite1.png )
 
+![](task2/images/elite2.png )
 
 
 </details>
