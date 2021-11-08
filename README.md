@@ -56,7 +56,7 @@ W pliku `przeszukiwanie.py` znajduje się implementacja zadania.
 - punkt startowy = 0.5
 - współczynnik uczenia = 0.1
 
-![](cw1/images/f1_05_01.png )
+![](task1/images/f1_05_01.png )
 
 Wynik:  -1.4999643188076823,
 Liczba iteracji:  49
@@ -65,7 +65,7 @@ Liczba iteracji:  49
 - punkt startowy = 0.5
 - współczynnik uczenia = 0.9
 
-![](cw1/images/f1_05_09.png )
+![](task1/images/f1_05_09.png )
 
 Wynik:  -1.5000356811923177,
 Liczba iteracji:  49
@@ -78,7 +78,7 @@ Dla funkcji kwadratowej algorytm działał prawidłowo. Wartości kolejnych x zb
 - punkt startowy = 0
 - współczynnik uczenia = 0.1
 
-![](cw1/images/f2_0_01.png )
+![](task1/images/f2_0_01.png )
 
 Wynik:  1.0393324789193148,
 Liczba iteracji:  1000
@@ -95,7 +95,7 @@ Wartość pochodnej rośnie do nieskończoności - złe parametry
 - punkt startowy = 0
 - współczynnik uczenia = 0.2
 
-![](cw1/images/f2_0_02.png )
+![](task1/images/f2_0_02.png )
 
 Wynik:  -1.4120028141545609,
 Liczba iteracji:  1000
@@ -104,7 +104,7 @@ Liczba iteracji:  1000
 - punkt startowy = 0
 - współczynnik uczenia = 0.01
 
-![](cw1/images/f2_0_001.png )
+![](task1/images/f2_0_001.png )
 
 Wynik:  1.7139370174658386,
 Liczba iteracji:  63
@@ -113,7 +113,7 @@ Liczba iteracji:  63
 - punkt startowy = 0
 - współczynnik uczenia = 0.05
 
-![](cw1/images/f2_0_005.png )
+![](task1/images/f2_0_005.png )
 
 Wynik:  1.7139398323504043,
 Liczba iteracji:  14
@@ -122,7 +122,7 @@ Liczba iteracji:  14
 - punkt startowy = -0.5
 - współczynnik uczenia = 0.1
 
-![](cw1/images/f2_-05_01.png )
+![](task1/images/f2_-05_01.png )
 
 Wynik:  -1.40177304570067,
 Liczba iteracji:  12
@@ -131,7 +131,7 @@ Liczba iteracji:  12
 - punkt startowy = -0.5
 - współczynnik uczenia = 0.05
 
-![](cw1/images/f2_-05_005.png )
+![](task1/images/f2_-05_005.png )
 
 Wynik:  -1.4017700669801165,
 Liczba iteracji:  17
@@ -157,9 +157,36 @@ Chodzi o to, żeby iloczyn gradientu i współczynnika uczenia był na tyle mał
 <details><summary>Ćwiczenie 2</summary>
 
 ## Algorytm ewolucyjny
+Algorytm ewolucyjny dla problemu minimalizacji funkcji n-zmiennych. W algortmie zastosowano selekcję turniejową oraz sukcjesję elitarną.
+Implementacje wykonano na podstawie pseudokodu przedstawionego na wykładzie:
+
+![](task2/images/pseudokod.png )
+
+
+Parametrami pragramu są:
+- Liczba iteracji
+- Wielkość populacji inicjalnej
+- Rozmiar turnieju
+- Rozmiar elity
+- Siła mutacji
+- Prawdopodobieństwo mutacji
+- Funkcja celu - jako minimalizacje pewnej funkcji
 
 ### Eksperymenty:
 #### Zależność wartości funkcji celu od wielkości populacji:
+Parametry funkcji
+- pop_size = 100
+- pop_arg_num = 2
+- tournament_size = 2
+- elite = 1
+- sigma = 0.1
+- mutation_prob = 0.5
+- function_to_minimize = bird_function
+![](task2/images/pop_size1.png )
+
+![](task2/images/pop_size2.png )
+
+![](task2/images/pop_size3.png )
 
 #### Zależność wartości funkcji celu od siły mutacji (sigma):
 
