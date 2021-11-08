@@ -266,6 +266,7 @@ Parametry:
 
 ![](task2/images/gif3.gif )
 
+W tym doświadczeniu algorytm pozostał nieco dłużej w minimum lokalnym. Jest tak za sprawą dużego rozmiaru elity, który zmniejsza eksploracje w poszukiwaniu lepszego rozwiązania. Małe prawdopodobieństwo oraz siła mutacji (sigma) również sprawiają, że różnorodność osobników nie jest duża, co spowalnia znalezienie optimum globalnego.
 </details>
 
 <details><summary>Ćwiczenie 3</summary>
