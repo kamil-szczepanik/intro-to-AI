@@ -252,6 +252,20 @@ Parametry:
 
 ![](task2/images/gif1.gif )
 
+
+##### Animacja znajdywania rozwiązania w kolejnych pokoleniach:
+Parametry:
+- t_max = 10
+- pop_size = 20
+- pop_arg_num = 2
+- tournament_size = 2
+- elite = 1
+- sigma = 0.1
+- mutation_prob = 0.5
+- function_to_minimize = bird_function
+
+![](task2/images/gif2.gif )
+
 </details>
 
 <details><summary>Ćwiczenie 3</summary>
