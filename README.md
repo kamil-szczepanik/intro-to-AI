@@ -155,7 +155,19 @@ Chodzi o to, żeby iloczyn gradientu i współczynnika uczenia był na tyle mał
 
 
 <details><summary>Ćwiczenie 2</summary>
-Do zrobienia
+
+## Algorytm ewolucyjny
+
+### Eksperymenty:
+#### Zależność wartości funkcji celu od wielkości populacji:
+
+#### Zależność wartości funkcji celu od siły mutacji (sigma):
+
+#### Zależność wartości funkcji celu od rozmiaru elity:
+
+
+
+
 </details>
 
 <details><summary>Ćwiczenie 3</summary>
