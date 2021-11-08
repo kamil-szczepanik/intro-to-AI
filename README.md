@@ -239,7 +239,7 @@ Parametry:
 Sukcjesja elitarna jest dobrą metodą na pozostawienie dobrych osobników z poprzedniej iteracji. Na wykresach widać, że mała elita jest wystarczajaco dobra. Elita = 10 wypada jednak tak samo dobrze jeśli nie lepiej. Dla dużej wielkości elity, czasem algorytm znajdzie minimum lokalne i będzie się niego przez pewnien czas trzymał, tzn. nawet jeśli będzie znajdywał pojedyńcze lepsze osobniki to przez kolejne iteracje w elicie wciąż będą osobniki z minimum lokalnego, które będą hamowały znalzienie rozwiązania. Taką sytuację przedstawia pierwsza ilustacja.
 
 
-##### Animacja znajdywania rozwiązania w kolejnych pokoleniach:
+##### 1) Animacja znajdywania rozwiązania w kolejnych pokoleniach:
 Parametry:
 - t_max = 10
 - pop_size = 20
@@ -253,18 +253,18 @@ Parametry:
 ![](task2/images/gif1.gif )
 
 
-##### Animacja znajdywania rozwiązania w kolejnych pokoleniach:
+##### 2) Animacja znajdywania rozwiązania w kolejnych pokoleniach:
 Parametry:
 - t_max = 10
-- pop_size = 20
+- pop_size = 50
 - pop_arg_num = 2
-- tournament_size = 2
-- elite = 1
+- tournament_size = 4
+- elite = 10
 - sigma = 0.1
-- mutation_prob = 0.5
+- mutation_prob = 0.1
 - function_to_minimize = bird_function
 
-![](task2/images/gif2.gif )
+![](task2/images/gif3.gif )
 
 </details>
 
