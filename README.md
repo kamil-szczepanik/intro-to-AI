@@ -271,9 +271,10 @@ W tym doświadczeniu algorytm pozostał nieco dłużej w minimum lokalnym. Jest 
 
 #### Populacja początkowa: losowa i klony:
 
-![](task2/images/klon1.gif )
 
-![](task2/images/klon2.gif )
+![](task2/images/klon1.png )
+
+![](task2/images/klon2.png )
 
 
 </details>
