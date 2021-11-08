@@ -271,10 +271,18 @@ W tym doświadczeniu algorytm pozostał nieco dłużej w minimum lokalnym. Jest 
 
 #### Populacja początkowa: losowa i klony:
 
+Doświadczenie 1)
 
 ![](task2/images/klon1.png )
 
+Doświadczenie 2)
+
 ![](task2/images/klon2.png )
+
+Na pierwszej ilustracji widać, że algorytm z początkową populacją złożoną z takich samych osobników działa o wiele wolniej niż z osobnikami losowymi. Z kolei w drugim doświadczeniu algorytm z klonami zatrzymał się w minimum lokalnym, prawdopodobnie dlatego, że populacja początkowa znajdowała się blisko tego minimim lokalnego.
+
+### Podsumowanie
+Algorytm ewolucyjny daje różne wyniki w zależności od wybranych parametrów oraz z samej losowości tego algorytmu. Parametry takie jak siła mutacji (sigma), prawdopodobieństwo mutacji, rozmiar turnieju, rozmiar elity wpływają na to czy algorytm ma charakter bardziej eksploracyjny czy eksploatacyjny. Dobrze gdy populacja jest odpowiednio duża, gdyż zwiększa to szansę na znalezienie optimum globalnego. Populacja początkowa złożona z różnorodnych osobników daje lepsze efekty pod względem rozwiązania i szybkości działania. Dla tych samych parametrów algorytm może znaleźć zupełnie różne rozwiązania - wynika to z wielu losowych kroków takich jak: inicjalizacja losowej populacji początkowej, losowy dobór uczestników turnieju, losowa mutacja osobników. Mimo tego, funkcja celu maleje w każdym przeprowadzonym doświadczeniu. Aby otrzymać optymalne rozwiązanie, najlepiej dla pewności włączyć algorytm kilka razy.
 
 
 </details>
