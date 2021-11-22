@@ -56,7 +56,7 @@ W pliku `przeszukiwanie.py` znajduje się implementacja zadania.
 - punkt startowy = 0.5
 - współczynnik uczenia = 0.1
 
-![](task1/images/f1_05_01.png )
+![](task1-gradient_descent/images/f1_05_01.png )
 
 Wynik:  -1.4999643188076823,
 Liczba iteracji:  49
@@ -65,7 +65,7 @@ Liczba iteracji:  49
 - punkt startowy = 0.5
 - współczynnik uczenia = 0.9
 
-![](task1/images/f1_05_09.png )
+![](task1-gradient_descent/images/f1_05_09.png )
 
 Wynik:  -1.5000356811923177,
 Liczba iteracji:  49
@@ -78,7 +78,7 @@ Dla funkcji kwadratowej algorytm działał prawidłowo. Wartości kolejnych x zb
 - punkt startowy = 0
 - współczynnik uczenia = 0.1
 
-![](task1/images/f2_0_01.png )
+![](task1-gradient_descent/images/f2_0_01.png )
 
 Wynik:  1.0393324789193148,
 Liczba iteracji:  1000
@@ -95,7 +95,7 @@ Wartość pochodnej rośnie do nieskończoności - złe parametry
 - punkt startowy = 0
 - współczynnik uczenia = 0.2
 
-![](task1/images/f2_0_02.png )
+![](task1-gradient_descent/images/f2_0_02.png )
 
 Wynik:  -1.4120028141545609,
 Liczba iteracji:  1000
@@ -104,7 +104,7 @@ Liczba iteracji:  1000
 - punkt startowy = 0
 - współczynnik uczenia = 0.01
 
-![](task1/images/f2_0_001.png )
+![](task1-gradient_descent/images/f2_0_001.png )
 
 Wynik:  1.7139370174658386,
 Liczba iteracji:  63
@@ -113,7 +113,7 @@ Liczba iteracji:  63
 - punkt startowy = 0
 - współczynnik uczenia = 0.05
 
-![](task1/images/f2_0_005.png )
+![](task1-gradient_descent/images/f2_0_005.png )
 
 Wynik:  1.7139398323504043,
 Liczba iteracji:  14
@@ -122,7 +122,7 @@ Liczba iteracji:  14
 - punkt startowy = -0.5
 - współczynnik uczenia = 0.1
 
-![](task1/images/f2_-05_01.png )
+![](task1-gradient_descent/images/f2_-05_01.png )
 
 Wynik:  -1.40177304570067,
 Liczba iteracji:  12
@@ -131,7 +131,7 @@ Liczba iteracji:  12
 - punkt startowy = -0.5
 - współczynnik uczenia = 0.05
 
-![](task1/images/f2_-05_005.png )
+![](task1-gradient_descent/images/f2_-05_005.png )
 
 Wynik:  -1.4017700669801165,
 Liczba iteracji:  17
@@ -160,7 +160,7 @@ Chodzi o to, żeby iloczyn gradientu i współczynnika uczenia był na tyle mał
 Algorytm ewolucyjny dla problemu minimalizacji funkcji n-zmiennych. W algortmie zastosowano selekcję turniejową oraz sukcjesję elitarną.
 Implementacje wykonano na podstawie pseudokodu przedstawionego na wykładzie:
 
-![](task2/images/pseudokod.png )
+![](task2-evolutionary_algorithm/images/pseudokod.png )
 
 Parametrami pragramu są:
 - Liczba iteracji
@@ -174,9 +174,9 @@ Parametrami pragramu są:
 ### Eksperymenty:
 Funkcja, na której testowano algorytm to Bird Function
 
-![](task2/images/bird_formula.png )
+![](task2-evolutionary_algorithm/images/bird_formula.png )
 
-![](task2/images/bird.png )
+![](task2-evolutionary_algorithm/images/bird.png )
 
 Jest  to dobra funkcja na testowanie przeszukujących algorytmów, ponieważ ma kilka minimów, w tym dwa optima globalne:
 f(x)=−106.764537 ulokowane w x=(4.70104 ,3.15294) oraz x=(−1.58214 ,−3.13024)
@@ -192,9 +192,9 @@ Parametry funkcji
 - mutation_prob = 0.5
 - function_to_minimize = bird_function
 
-![](task2/images/pop_size1.png )
+![](task2-evolutionary_algorithm/images/pop_size1.png )
 
-![](task2/images/pop_size2.png )
+![](task2-evolutionary_algorithm/images/pop_size2.png )
 
 Na powyższych wykresach widać, że funcja celu maleje dla każdej wielkości populacji. Dodatkowo robi to całkiem szybko bo już po kilku iteracjach algorytm znajduje przybliżone rozwiązanie. Widać jednak, że populacja wielkości 10 może czasem nie wystarczyć na znalezienie rozwiązania - algorytm
 utyka w minimum lokalnym i pozostaje tam do końca trwania programu.
@@ -208,9 +208,9 @@ Parametry:
 - mutation_prob = 0.5
 - function_to_minimize = bird_function
 
-![](task2/images/sigma1.png )
+![](task2-evolutionary_algorithm/images/sigma1.png )
 
-![](task2/images/sigma2.png )
+![](task2-evolutionary_algorithm/images/sigma2.png )
 
 ![](task2/images/sigma3.png )
 
@@ -232,9 +232,9 @@ Parametry:
 - sigma = 0.1
 - mutation_prob = 0.5
 
-![](task2/images/elite1.png )
+![](task2-evolutionary_algorithm/images/elite1.png )
 
-![](task2/images/elite2.png )
+![](task2-evolutionary_algorithm/images/elite2.png )
 
 Sukcjesja elitarna jest dobrą metodą na pozostawienie dobrych osobników z poprzedniej iteracji. Na wykresach widać, że mała elita jest wystarczajaco dobra. Elita = 10 wypada jednak tak samo dobrze jeśli nie lepiej. Dla dużej wielkości elity, czasem algorytm znajdzie minimum lokalne i będzie się niego przez pewnien czas trzymał, tzn. nawet jeśli będzie znajdywał pojedyńcze lepsze osobniki to przez kolejne iteracje w elicie wciąż będą osobniki z minimum lokalnego, które będą hamowały znalzienie rozwiązania. Taką sytuację przedstawia pierwsza ilustacja.
 
@@ -250,7 +250,7 @@ Parametry:
 - mutation_prob = 0.5
 - function_to_minimize = bird_function
 
-![](task2/images/gif1.gif )
+![](task2-evolutionary_algorithm/images/gif1.gif )
 
 
 ##### 2) Animacja znajdywania rozwiązania w kolejnych pokoleniach:
@@ -264,7 +264,7 @@ Parametry:
 - mutation_prob = 0.1
 - function_to_minimize = bird_function
 
-![](task2/images/gif3.gif )
+![](task2-evolutionary_algorithm/images/gif3.gif )
 
 W tym doświadczeniu algorytm pozostał nieco dłużej w minimum lokalnym. Jest tak za sprawą dużego rozmiaru elity, który zmniejsza eksploracje w poszukiwaniu lepszego rozwiązania. Małe prawdopodobieństwo oraz siła mutacji (sigma) również sprawiają, że różnorodność osobników nie jest duża, co spowalnia znalezienie optimum globalnego.
 
@@ -273,18 +273,18 @@ W tym doświadczeniu algorytm pozostał nieco dłużej w minimum lokalnym. Jest 
 
 Doświadczenie 1)
 
-![](task2/images/klon1.png )
+![](task2-evolutionary_algorithm/images/klon1.png )
 
 Doświadczenie 2)
 
-![](task2/images/klon2.png )
+![](task2-evolutionary_algorithm/images/klon2.png )
 
 Na pierwszej ilustracji widać, że algorytm z początkową populacją złożoną z takich samych osobników działa o wiele wolniej niż z osobnikami losowymi. Z kolei w drugim doświadczeniu algorytm z klonami zatrzymał się w minimum lokalnym, prawdopodobnie dlatego, że populacja początkowa znajdowała się blisko tego minimim lokalnego.
 
 ##### Animacja znajdywania rozwiązania z populacją początkową z klonami
 Pokolenia: 1, 5, 10, 15, 20, 25, 30, 35
 
-![](task2/images/gif4.gif )
+![](task2-evolutionary_algorithm/images/gif4.gif )
 
 W powyższym przypadku algorytm nie zatrzymuje się w minimum lokalnym i znajduje optimum globalne.
 
