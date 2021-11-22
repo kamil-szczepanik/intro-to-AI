@@ -430,6 +430,9 @@ Warto zaznaczyć, że rozgrywki z tych eksperymentów nie były jednakowe. Przec
 ### Podsumowanie
 Algorytm minimax jest prostą w implementacji i ciekawą metodą znajdywania optymalnych ruchów w deterministycznych grach dwuosobowych. W grze "Kółko i krzyżyk" głębokość przeszukiwania w rozgrywce między dwoma AI nie miała znaczenia, dopóki jedno z nich było równe 0 - wtedy oczywiście nie ma przeszukiwania tylko wybieranie heurystyczne i gra kończyła się wygraną algorytmu z większą głębokością. W takiej małej grze jak kółko i krzyżyk występuje zaskakująco dużo stanów, które algorytm może rozpatrzyć jeśli ma dużą wartość głębokości przeszukiwania.
 
+Można wygrać z komputerem ale tylko wtedy kiedy gra on losowo - z algorytmem minimax się nie uda. Uważam, że gra w której wiemy, że przegramy lub zremisujemy raczej nie będzie sprawiać długo przyjemności - w grach chodzi o to aby wy**gry**wać
+
+##### Niestey nie udało się zaimplementować przycinania alfa beta
 
 </details>
 
