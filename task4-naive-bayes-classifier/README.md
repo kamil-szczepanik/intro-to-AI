@@ -48,10 +48,7 @@ Dla walidacji z prostym podziałem danych na zbiór treningowy i testowy, do bud
 Dla k-krotnej walidacji krzyżowej dane, do budowy docelowego modelu używane są wszystkie dane lecz "nie wszystkie na raz". Po podzieleniu danych na _k_ podzbiorów, zbiór treningowy to wszystkie podzbiory oprócz jednego, a zbiór testowy to ten jeden podzbiór, którego nie ma w zbiorze treningowym. Takich par zbiorów treningowych i testowych będzie _k_. Na każdej takiej parze model jest budowany i weryfikowany, co w rezultacie oznacza, że wszystkie dane zostaną użyte do zbudowania modelu.
 
 **Jak zinterpretować różnice/brak różnic w wynikach z weryfikacji jakości modelu obu metod (k-krotna walidacja vs zbiór treningowy i testowy)**
-
-
-
-
+Dużą różnicą tych metod weryfikacji modelu jest to, że w k-krotnej walidacji otrzymujemy jeden wynik, a w prostym podziale otrzymujemy inny wynik w każdym wywołaniu. Wnioskiem tego jest to, że dla prostego podziału nie możemy jednoznacznie stwierdzić jaka jest jakość modelu, a dla k-krotnej walidacji już tak.
 
 ### Podsumowanie
 
