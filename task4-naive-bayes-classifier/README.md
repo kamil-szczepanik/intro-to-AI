@@ -24,8 +24,21 @@ Wynik:
     accuracy = 0.5253663793103448
 
 #### Prosty podział na zbiór treningowy i testowy
+Dla tej metody walidacji wykonano trzy eksperymenty i każdy z nich dał inny rezultat. Jest tak, ponieważ za każdym razem zbiór treningowy i testowy jest inny ( są losowane ), jednak ich stosunek jest taki sam i równy 60/40 (treningowy/testowy).
 
 1) Wynik:
+
+    accuracy =  0.4609375
+
+2) Wynik:
+
+    accuracy = 0.5640625
+
+3) Wynik:
+
+    accuracy = 0.5828125
+
+Jak widać wyniki eksperymentów bardzo się różnią. Ciężko stwierdzić jaka jest dokładność modelu na prawdę.
 
 ### Pytania:
 **Jakiego podzbioru danych (z tych którymi dysponujemy) użyjemy do zbudowania docelowego modelu na potrzeby klasyfikowania nowych próbek (czyli dla tych dla których budujemy klasyfikator)?**
@@ -34,9 +47,11 @@ Dla walidacji z prostym podziałem danych na zbiór treningowy i testowy, do bud
 
 Dla k-krotnej walidacji krzyżowej dane, do budowy docelowego modelu używane są wszystkie dane lecz "nie wszystkie na raz". Po podzieleniu danych na _k_ podzbiorów, zbiór treningowy to wszystkie podzbiory oprócz jednego, a zbiór testowy to ten jeden podzbiór, którego nie ma w zbiorze treningowym. Takich par zbiorów treningowych i testowych będzie _k_. Na każdej takiej parze model jest budowany i weryfikowany, co w rezultacie oznacza, że wszystkie dane zostaną użyte do zbudowania modelu.
 
-
-
 **Jak zinterpretować różnice/brak różnic w wynikach z weryfikacji jakości modelu obu metod (k-krotna walidacja vs zbiór treningowy i testowy)**
+
+
+
+
 
 ### Podsumowanie
 
