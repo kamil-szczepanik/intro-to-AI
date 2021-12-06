@@ -10,7 +10,9 @@ Do weryfikacji jakości modelu wykorzystać:
  - k-krotną walaidację krzyżową (k=5)
  - oraz podział na zbiór treningowy i testowy (60/40)
 
-Do eksperymentów użyte zostały dane o winie czerwonym
+Do eksperymentów użyte zostały dane o winie czerwonym. Jest to zbiór danych wielkości około 1500 zapisów dotyczących właściwości wina. Klasami, do których dane były klasyfikowane była cecha jakości wina ( quality ). Klasyfikator miał na podstawie danych o winie przyporządkować mu jakość.
+
+
 
 
 ### Pytania:
