@@ -12,15 +12,27 @@ Do weryfikacji jakości modelu wykorzystać:
 
 Do eksperymentów użyte zostały dane o winie czerwonym. Jest to zbiór danych wielkości około 1500 zapisów dotyczących właściwości wina. Klasami, do których dane były klasyfikowane była cecha jakości wina ( quality ). Klasyfikator miał na podstawie danych o winie przyporządkować mu jakość.
 
+#### Miara oceny jakości klasyfikatora
+Do oceny jakości klasyfikatora wybrano dokładność ( accuracy ), czyli stosunek liczby poprawnych predykcji do liczby danych testowych ( liczba danych, dla których predykcji była robiona). 
 
+### Eksprymenty
+#### k-krotna walidacja krzyżowa
+Dla k-krotnej walidacji krzyżowej należy przeprowadzić tylko jeden eksperyment, ponieważ dane są dzielone w zawsze taki sam sposób ( nie ma tasowania danych przed podziałem ).
 
+Wynik:
+
+    accuracy = 0.5253663793103448
+
+#### Prosty podział na zbiór treningowy i testowy
+
+1) Wynik:
 
 ### Pytania:
 **Jakiego podzbioru danych (z tych którymi dysponujemy) użyjemy do zbudowania docelowego modelu na potrzeby klasyfikowania nowych próbek (czyli dla tych dla których budujemy klasyfikator)?**
 
 Dla walidacji z prostym podziałem danych na zbiór treningowy i testowy, do budowy docelowego modelu należy użyć **tylko zbiór treningowy**. Jest to konieczne, ponieważ walidację należy przeprowadzać na danych, które "nie widziały" danych treningowych. Chodzi o to, aby nie sprawdzać modelu na danych, na których model się uczyło. W ten sposób ominięty zostanie problem nadmiernego dopasowania ( overfitting ).
 
-Dla k-krotnej walidacji krzyżowej dane, do budowy docelowego modelu używane są wszystkie dane lecz "nie wszystkie na raz". Po podzieleniu danych na k podzbiorów, zbiór treningowy to wszystkie podzbiory oprócz jednego, a zbiór testowy to ten jeden podzbiór, którego nie ma w zbiorze treningowym. Takich par zbiorów treningowych i testowych będzie k. Na każdej takiej parze model jest budowany i weryfikowany, co w rezultacie oznacza, że wszystkie dane zostaną użyte do zbudowania modelu.
+Dla k-krotnej walidacji krzyżowej dane, do budowy docelowego modelu używane są wszystkie dane lecz "nie wszystkie na raz". Po podzieleniu danych na _k_ podzbiorów, zbiór treningowy to wszystkie podzbiory oprócz jednego, a zbiór testowy to ten jeden podzbiór, którego nie ma w zbiorze treningowym. Takich par zbiorów treningowych i testowych będzie _k_. Na każdej takiej parze model jest budowany i weryfikowany, co w rezultacie oznacza, że wszystkie dane zostaną użyte do zbudowania modelu.
 
 
 
