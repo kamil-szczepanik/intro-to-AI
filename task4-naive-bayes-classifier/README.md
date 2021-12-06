@@ -26,7 +26,7 @@ W pliku [classifier.ipynb](task4-naive-bayes-classifier/classifier.ipynb) znajdu
 #### Miara oceny jakości klasyfikatora
 Do oceny jakości klasyfikatora wybrano dokładność ( accuracy ), czyli stosunek liczby poprawnych predykcji do liczby danych testowych ( liczba danych, dla których predykcji była robiona). Jest do dobra metoda sprawdzania jakości modelu, ponieważ jest intuicyna, łatwa w implementacji oraz dostarcza wystarczającą ocenę.
 
-### Eksprymenty
+### Eksperymenty
 #### k-krotna walidacja krzyżowa
 Dla k-krotnej walidacji krzyżowej należy przeprowadzić tylko jeden eksperyment, ponieważ dane są dzielone w zawsze taki sam sposób ( nie ma tasowania danych przed podziałem ).
 
