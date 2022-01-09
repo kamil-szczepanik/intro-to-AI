@@ -630,3 +630,17 @@ Zgodnie z oczekiwaniami naiwny klasyfikator Bayesa osiąga gorszą dokładność
 
 
 </details>
+
+
+<details><summary>Ćwiczenie 6</summary>
+
+TODO
+
+</details>
+
+
+<details><summary>Ćwiczenie 7</summary>
+
+TODO
+
+</details>
