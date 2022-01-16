@@ -9,11 +9,70 @@ Rezultatem działania algorytmu powinna być ścieżka w postaci: (1,1)->(0,1)->
 
 Algorytm uczenia ze wzmocnieniem opiera się na symulowaniu kolejnych kroków, i w zależności czy jest on porządany czy nie przyznajemy agentowi nagrodę, bądź karę. W przypadku labiryntu nagroda jest przyznawana w momencie dojścia do celu a kara np. w momecie wejścia w ścianę. Następnie na podstawie tego jaka nagroda została przyznana po wykonaniu akcji w danym stanie, aktualizowana jest tabela Q. Ma ona wierszy tyle ile jest stanów w środowiku i kolumn tyle ile jest możliwych akcji. W niej zapisana jest "jakość" (quality) danej akcji w danym stanie. Dzięki temu algorytm "uczy się" na podstawie przeszłych doświadczeń. 
 
+Tabela Q jest aktualizowana według poniższego wzoru:
+
+![](task6-reinforecement-q-learning/images/q_formula.png)
+
+gdzie:
+
+- alpha ( 0 < alpha < 1) to współczynnik uczenia - ustala jak bardzo wartości Q mają się zmieniać
+- gamma ( 0 < gamma < 1) współczynnik zniżki - determinuje jak dużo wagi algorytm przywiązuje do przyszłych zniżek
+
 ## Implementacja
 
-W pliku [q-learning.ipynb](https://gitlab-stud.elka.pw.edu.pl/kszczep4/wsi-21z/-/blob/main/task6-reinforecement-q-learning/q-learning.ipynb)
+W pliku [q-learning.ipynb](task6-reinforecement-q-learning/q-learning.ipynb)
 znajduje się cała implementacja zadania. Stworzona tam klasa MazeEnv imlpementuje środowisko labiryntu, czyli opisuje stany, nagrody oraz
 zawiera funkcję kroku z jednego miejsca na mapie do drugiego.
 
 Do stowrzenia środowiska potrzebna jest mapa dostarczona jako lista z kolejnymi wierszami labiryntu.
+
+
+# Eksperymenty
+
+## 1) Mała mapa
+
+Stworzono następującą mapę:
+
+![](task6-reinforecement-q-learning/images/mapa1.png)
+
+##### Parametry: `alpha = 0.1`, `gamma = 0.6`, `epsilon = 0.1`
+##### Liczba epok: `1001`
+
+### Wynik nauczonego agenta:
+
+![](task6-reinforecement-q-learning/images/maze.gif)
+
+![](task6-reinforecement-q-learning/images/ex1_result.png)
+
+
+#### Wykresy liczby wykonanych kroków i naliczonej kary w kolejnych epokach podczas uczenia:
+
+![](task6-reinforecement-q-learning/images/ex1_plot_steps.png)
+
+![](task6-reinforecement-q-learning/images/ex1_plot_penalties.png)
+
+## 2) Duża mapa
+
+Stworzono następującą mapę:
+
+![](task6-reinforecement-q-learning/images/mapa2.png)
+
+##### Parametry: `alpha = 0.1`, `gamma = 0.6`, `epsilon = 0.1`
+##### Liczba epok: `1001`
+
+### Wynik nauczonego agenta:
+
+![](task6-reinforecement-q-learning/images/ex2_result.png)
+
+
+#### Wykresy liczby wykonanych kroków i naliczonej kary w kolejnych epokach podczas uczenia:
+
+![](task6-reinforecement-q-learning/images/ex2_plot_steps.png)
+
+![](task6-reinforecement-q-learning/images/ex2_plot_penalties.png)
+
+# Wnioski
+
+Algorymt działa bardzo dobrze i szybko znajduje optymalną trasę w labiryncie. Praktycznie już przy 500 epoce algorymt już nie popełnia błedów.
+
 
