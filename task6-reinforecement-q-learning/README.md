@@ -16,7 +16,7 @@ Tabela Q jest aktualizowana według poniższego wzoru:
 gdzie:
 
 - alpha ( 0 < alpha < 1) to współczynnik uczenia - ustala jak bardzo wartości Q mają się zmieniać
-- gamma ( 0 < gamma < 1) współczynnik zniżki - determinuje jak dużo wagi algorytm przywiązuje do przyszłych zniżek
+- gamma ( 0 < gamma < 1) współczynnik zniżki - determinuje jak dużo wagi algorytm przywiązuje do przyszłych zniżek, tzn. czy koncentruje się na tym co już wie i w to idzie ( eksploatacja ) czy "zwiedza" przestrzeń stanów aby w przyszłości mieć jak największą nagrodę.
 
 ## Implementacja
 
@@ -29,13 +29,15 @@ Do stowrzenia środowiska potrzebna jest mapa dostarczona jako lista z kolejnymi
 
 # Eksperymenty
 
+Parametry `alpha` i `gamma` udało się dobrać, tak że algorytm z powodzeniem uczy się drogi w labiryncie.
+
 ## 1) Mała mapa
 
 Stworzono następującą mapę:
 
 ![](task6-reinforecement-q-learning/images/mapa1.png)
 
-##### Parametry: `alpha = 0.1`, `gamma = 0.6`, `epsilon = 0.1`
+##### Parametry: `alpha = 0.1`, `gamma = 0.6`
 ##### Liczba epok: `1001`
 
 ### Wynik nauczonego agenta:
@@ -57,7 +59,7 @@ Stworzono następującą mapę:
 
 ![](task6-reinforecement-q-learning/images/mapa2.png)
 
-##### Parametry: `alpha = 0.1`, `gamma = 0.6`, `epsilon = 0.1`
+##### Parametry: `alpha = 0.1`, `gamma = 0.6`
 ##### Liczba epok: `1001`
 
 ### Wynik nauczonego agenta:
@@ -73,6 +75,6 @@ Stworzono następującą mapę:
 
 # Wnioski
 
-Algorymt działa bardzo dobrze i szybko znajduje optymalną trasę w labiryncie. Praktycznie już przy 500 epoce algorymt już nie popełnia błedów.
+Algorymt działa bardzo dobrze i szybko znajduje optymalną trasę w labiryncie. Praktycznie już przy 500 epoce algorytm już nie popełnia błedów. Nauczony agent bezbłednie przechodzi labirynt. 
 
 
