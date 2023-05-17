@@ -516,7 +516,7 @@ Jak widać wyniki eksperymentów bardzo się różnią. Ciężko stwierdzić jak
 ### Zespół:
 **Piotr Hondra**
 
-**Kamil Szczepanik 303782**
+**Kamil Szczepanik**
 
 # Ćw 5. - Sztuczne sieci neuronowe
 
