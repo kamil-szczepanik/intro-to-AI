@@ -2,7 +2,7 @@
 
 _Kamil Szczepanik_
 
-_303782_
+<!-- _303782_ -->
 
 
 ## Dokumentacja
